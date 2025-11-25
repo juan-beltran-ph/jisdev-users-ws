@@ -1,4 +1,4 @@
-package com.jisdev.demo_ws.controller.esception;
+package com.jisdev.demo_ws.controller.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

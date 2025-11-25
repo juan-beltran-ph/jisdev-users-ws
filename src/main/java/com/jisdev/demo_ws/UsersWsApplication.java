@@ -5,10 +5,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
 @SpringBootApplication
-public class DemoWsApplication {
+public class UsersWsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoWsApplication.class, args);
+		SpringApplication.run(UsersWsApplication.class, args);
 	}
 
 }
