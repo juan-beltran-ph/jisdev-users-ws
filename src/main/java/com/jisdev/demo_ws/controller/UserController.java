@@ -1,6 +1,7 @@
 package com.jisdev.demo_ws.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -29,11 +30,14 @@ public class UserController {
 
     @Autowired
     IUserService userService;
+    
+    @Autowired
+    private Environment env;
 
     @GetMapping("/status/check")
     public String getHealt(){
         log.info("HelthCheck");
-        return "It's working...";
+        return "It's working on port " + env.getProperty("local.server.port");
     }
 
     @GetMapping
